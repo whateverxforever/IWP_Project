@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    background-color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .3s;
+    z-index: 9999;
+}
+
+nav.black {
+    background-color: rgba(255, 255, 255, 0.9);
+    height: 100px;
+    padding: 10px 100px;
+}
+
+nav #logo {
+    color: white;
+    padding: 22px 20px;
+    height: 80px;
+    float: left;
+    font-size: 32px;
+    font-family: 'Cedarville Cursive', cursive;
+    transition: .3s;
+    font-weight: bolder;
+}
+
+nav.black #logo {
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li:hover {
+    border-bottom: 3px solid white;
+    transition: .3s;
+}
+
+nav.black ul li:hover {
+    border-bottom: 3px solid black;
+    transition: .3s;
+}
+
+nav ul li a {
+    line-height: 80px;
+    font-size: 18px;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+nav.black ul li a {
+    color: black;
+}
+
+nav ul li a:focus {
+    outline: none;
+}
+
+#slider,
+.wrap,
+.slide-content {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+}
+
+.wrap {
+    position: relative;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+
+    background-image: url("images/footwear-shoes-sneakers-1670766.jpg");
+}
+
+.slide2 {
+    background-image: url("images/nike.jpg");
+}
+
+.slide3 {
+    background-position-y: -310px;
+    background-image: url("images/beauty-dark-fashion-1004801.jpg");
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+}
+
+#mid-banner {
+    margin: 0;
+    padding: 0;
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+.mid-image {
+    float: left;
+    width: 33.33%;
+    background-color: whitesmoke;
+    background-position: center;
+    background-size: contain;
+    margin: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.image1 {
+    background-image: url("images/ll.jpg");
+    background-color: pink;
+}
+
+.image3 {
+    background-size: cover;
+    background-image: url("images/k1.jpg");
+    background-color: aqua;
+}
+
+.image2 {
+    background-image: url("images/Mid-Banner-img1.jpg");
+    background-color: aquamarine;
+}
+
+.image-content {
+    margin: 0;
+    padding: 0;
+    bottom: 0%;
+    height: 70px;
+    width: 100%;
+    z-index: 400;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-content span {
+    position: relative;
+    line-height: 65px;
+    color: white;
+    font-size: 23px;
+    font-family: 'Karla', sans-serif;
+    display: inline-block;
+}
+
+.mid-image:hover .image-content {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.bottom-banner {
+    margin: 0;
+    padding: 0;
+    height: 60 vh;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    background-color: white;
+}
+
+.top-heading {
+    height: 60px;
+    width: 98.7 %;
+    background-color: white;
+    align-content: center;
+    margin: 10px;
+    text-align: center;
+    line-height: 62px;
+}
+
+.top-heading span {
+    font-family: 'Karla', sans-serif;
+    font-size: 34px;
+}
+
+.bottom-content {
+    position: relative;
+    float: left;
+    width: 19%;
+    height: 300px;
+    margin: 7px;
+    background-position: center;
+    background-size: contain;
+}
+
+.bottom-content .image-content {
+    height: 40px;
+    background-color: white;
+    border: 0.1px solid #F2F2F2;
+    border-top: 0px;
+}
+
+.bottom-content .image-content span {
+    color: grey;
+    line-height: 37px;
+}
+
+.bottom-content:hover .image-content {
+    background-color: #F2F2F2;
+    transition: .5s;
+}
+
+.cont1 {
+    background-image: url("images/Shoes/Men/air_jordan.jpg");
+}
+
+.cont2 {
+    background-image: url("images/Shoes/Men/nike_air_force_1_prm_x_carhartt_wip_1251010_1110.jpg");
+}
+
+.cont3 {
+    background-image: url("images/Shoes/Men/adidas_kamanda_1071337_1134.jpg");
+}
+
+.cont4 {
+    background-image: url("images/Shoes/Men/nike_air_x_fear_of_god_instore_onl_1072115_1575.jpg");
+}
+
+.cont5 {
+    background-image: url("images/Shoes/Men/nike_air_x_fear_of_god_instore_onl_1072114_1116.jpg ");
+}
+
+.text-content {
+    line-height: 25px;
+    margin: 100px;
+}
+
+.text-content:hover h1 {
+    color: crimson;
+    transition: .5s;
+}
+
+.footer {
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.box {
+    height: 140px;
+    width: 80%;
+    background-color: black;
+    margin-left: 140px;
+    text-align: center;
+
+    border-bottom: 1px solid whitesmoke;
+}
+
+.panel {
+    width: 24%;
+    height: 140px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.panel h1 {
+    font-size: 19px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 50;
+    line-height: 40px;
+}
+
+.panel2 img {
+    width: 40px;
+    height: auto;
+}
+
+.panel4 img {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 30px;
+    height: auto;
+}
+
+.bottom-panel {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+
+.bottom-panel {
+    text-align: center;
+}
+
+.bottom-panel ul li {
+    display: inline-block;
+    line-height: 55px;
+    color: grey;
+    font-size: 16px;
+    float: left;
+}

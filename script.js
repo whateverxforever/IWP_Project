@@ -1,4 +1,3 @@
-
 let sliderImages = document.querySelectorAll(".slide"),
     arrowLeft = document.querySelector("#arrow-left"),
     arrowRight = document.querySelector("#arrow-right"),
@@ -32,7 +31,7 @@ function slideRight() {
 }
 
 // Left arrow click
-arrowLeft.addEventListener("click", function() {
+arrowLeft.addEventListener("click", function () {
     if (current === 0) {
         current = sliderImages.length;
     }
@@ -41,7 +40,7 @@ arrowLeft.addEventListener("click", function() {
 
 
 // Right arrow click
-arrowRight.addEventListener("click", function() {
+arrowRight.addEventListener("click", function () {
     if (current === sliderImages.length - 1) {
         current = -1;
     }
@@ -50,7 +49,7 @@ arrowRight.addEventListener("click", function() {
 
 
 
-setInterval(function() {
+setInterval(function () {
     if (current === sliderImages.length - 1) {
         current = -1;
     }
@@ -58,13 +57,15 @@ setInterval(function() {
 }, 4000);
 
 
-$(window).on('scroll', function() {
+$(window).on('scroll', function () {
     if ($(window).scrollTop()) {
         $('nav').addClass('black');
+
     } else {
         $('nav').removeClass('black');
     }
 })
+
 
 
 startSlide();

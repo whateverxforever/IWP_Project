@@ -1,3 +1,9 @@
+<?php
+
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -10,6 +16,9 @@
 <body>
     <div id="wrapper">
         <style>
+            nav{
+                position: fixed;
+            }
             nav #logo{
                 color: white;
             }
@@ -82,27 +91,27 @@
 
             <div class="bottom-content cont1">
                 <div class="image-content">
-                    <span>Jordan</span>
+                <a href="item.php"><span>Jordan</span></a> 
                 </div>
             </div>
             <div class="bottom-content cont2">
                 <div class="image-content">
-                    <span>Air Force One</span>
+                <a href="item.php"><span>Air Force One</span></a> 
                 </div>
             </div>
             <div class="bottom-content cont3">
                 <div class="image-content">
-                    <span>Adidas</span>
+                <a href="item.php"><span>Adidas</span></a> 
                 </div>
             </div>
             <div class="bottom-content cont4">
                 <div class="image-content">
-                    <span>Nike Air X</span>
+                    <a href="item.php"><span>Nike Air X</span></a> 
                 </div>
             </div>
             <div class="bottom-content cont5">
                 <div class="image-content">
-                    <span>UnderArmor</span>
+                    <a href="item.php"><span>UnderArmour</span></a>
                 </div>
             </div>
 

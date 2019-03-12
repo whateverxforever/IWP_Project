@@ -1,12 +1,8 @@
-<?php
-
-    session_start();
-
-?>
-
 <nav>
 
 <style>
+
+
     .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -58,9 +54,9 @@
     <div id="logo">VELASCA</div>
     <ul>
         <li><a href="index.php">HOME</a></li>
-        <li><a href="">Men</a></li>
-        <li><a href="">WOMEN</a></li>
-        <li><a href="">KIDS</a></li>
+        <li><a href="genre.php?=men">Men</a></li>
+        <li><a href="genre.php?=women">WOMEN</a></li>
+        <li><a href="genre.php?=kids">KIDS</a></li>
         <div class="dropdown">
         <?php
         if(isset($_SESSION['user'])){

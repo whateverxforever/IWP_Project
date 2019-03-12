@@ -1,8 +1,22 @@
+<?php
+
+    session_start();
+
+?>
+<?php
+    if(isset($_SESSION['user'])){
+        header("Location: profile.php");
+    }
+?>
 <html>
 <title>signup</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="login_style.css">
-
+<style>
+    nav ul li a{
+        color: black;
+    }
+ </style>   
 <body>
     <div id="wrapper">
         <?php 

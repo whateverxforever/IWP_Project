@@ -1,3 +1,14 @@
+<?php
+
+    session_start();
+
+?>
+<?php
+    if (!isset($_SESSION['user'])){
+        header("Location: index.php");
+    }
+?>
+
 <html>
     <title>Profile</title>
     <link rel="stylesheet" href="profile_style.css">
@@ -21,7 +32,7 @@
             <hr>
             <div id="database_details">
                 <br>
-                <form action="">
+                <form action="profile.edit.php" method="POST">
                     <table>
                         <tr>
                             <td>Name:</td> <td><?php echo $_SESSION['user_name'] ;?></td>
@@ -64,7 +75,7 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
-<script src="script_nav.js"></script>
+<script src="script.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Karla|Bad+Script|Handlee" rel="stylesheet">
 
 </html>

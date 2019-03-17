@@ -27,7 +27,7 @@
                 
                 header("Location: index.php");
             }else{
-                header("Location: login.php?error=Invalid Username and Password ".$row['password']." ".password_hash($pass, PASSWORD_DEFAULT));
+                header("Location: login.php?error=Invalid Username and Password ");
                 exit();
             }
             

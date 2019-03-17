@@ -10,7 +10,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>Sample Site</title>
+    <title>VELASCA</title>
 </head>
 
 <body>
@@ -101,17 +101,17 @@
             </div>
             <div class="bottom-content cont3">
                 <div class="image-content">
-                <a href="item.php"><span>Adidas</span></a> 
+                <a href="item.inc.php?p_id=adidas_kamanda"><span>Adidas KAMANDA</span></a> 
                 </div>
             </div>
             <div class="bottom-content cont4">
                 <div class="image-content">
-                    <a href="item.php"><span>Nike Air X</span></a> 
+                    <a href="item.inc.php?p_id=jordan_liftoff"><span>Jordan Lift Off</span></a> 
                 </div>
             </div>
             <div class="bottom-content cont5">
                 <div class="image-content">
-                    <a href="item.php"><span>UnderArmour</span></a>
+                    <a href="item.php?p_id=ua_hovr"><span>UnderArmour HOVR</span></a>
                 </div>
             </div>
 

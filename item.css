@@ -1,0 +1,39 @@
+html {
+    overflow-x: hidden;
+}
+
+.wrap-inner,
+.reviews {
+    display: block;
+}
+
+.item-image {
+    float: left;
+    width: 50%;
+    padding-bottom: 80px;
+}
+
+.item-description {
+    float: right;
+    width: 45%;
+    margin-right: 30px;
+}
+
+.reviews {
+    padding-top: 20px;
+    width: 37%;
+    margin: 0;
+    margin-left: 80px;
+
+    position: relative;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+}
+
+input[type="radio"]:checked {
+
+    background-color: pink;
+}

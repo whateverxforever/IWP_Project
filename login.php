@@ -13,6 +13,7 @@
 <title>Login</title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="login_style.css">
+<script src="https://www.google.com/reCAPTCHA/api.js?render=6LcRBpgUAAAAAEVyMG8-AVu-oe3x1c1gUeoWa7h8"></script>
 
 <body>
     <div id="wrapper">
@@ -34,7 +35,8 @@
                 ?>
 
                 <input type="text" name="uname" placeholder="Username" required> <br>
-                <input type="password" name="pass" id="" placeholder="Password" required> <br> <br> <br> <br>
+                <input type="password" name="pass" id="" placeholder="Password" required> <br> 
+                <div class="g-reCAPTCHA" data-sitekey="your_site_key"></div> <br> <br> <br> <br>
                 <button type="submit" name="submit-login">Log In</button>
                 <p style="font-weight: 400;">New to VELASCA? <a style="color:#ff3399; text-decoration: none;" href="signup.php">Create
                         Account</a></p>

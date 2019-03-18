@@ -31,22 +31,16 @@
         <div class="top-banner" style="margin-top:120px">
                 <img src="images/men_banner.jpg" style="width:100%" alt="">
         </div>
-
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius obcaecati totam quasi harum fugit reiciendis earum beatae ipsam, dolor nobis nam accusantium esse, quaerat quam reprehenderit, autem rerum vel iusto?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti ad officia vel repellendus, velit aut, voluptate adipisci incidunt tempora ipsa suscipit. Aliquid, temporibus perspiciatis totam dolorem velit deleniti illo!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure deserunt, doloribus quibusdam sequi magnam pariatur id dolorem praesentium blanditiis perferendis alias libero ipsa incidunt porro sapiente maxime repudiandae magni aperiam.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam totam dolorem aspernatur delectus qui eum eveniet eos praesentium. Ducimus animi officia voluptate debitis sed modi consectetur aliquam. Corporis, cupiditate beatae?
-
-       
-        <br>
-        <br>
-        <br>
-        <br>
+    </div>        
+        <?php
+            include 'list.inc.php';
+            include 'list.inc.php';
+            include 'list.inc.php';
+        ?>
+   
         <?php 
             include 'footer.php'
         ?>
-
-    </div>
 
 
 </body>

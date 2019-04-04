@@ -100,8 +100,9 @@
                 </div>
             </div>
             <div class="bottom-content cont3">
+                <a href="item.inc.php?p_id=adidas_kamanda">
                 <div class="image-content">
-                <a href="item.inc.php?p_id=adidas_kamanda"><span>Adidas KAMANDA</span></a> 
+                <span>Adidas KAMANDA</span></a> 
                 </div>
             </div>
             <div class="bottom-content cont4">
@@ -111,7 +112,7 @@
             </div>
             <div class="bottom-content cont5">
                 <div class="image-content">
-                    <a href="item.php?p_id=ua_hovr"><span>UnderArmour HOVR</span></a>
+                    <a href="item.inc.php?p_id=ua_hovr"><span>UnderArmour HOVR</span></a>
                 </div>
             </div>
 

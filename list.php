@@ -2,6 +2,22 @@
 
     session_start();
 
+    $products = array();
+
+    require 'db.inc.php';
+
+        $gender = $_GET['sex'];
+        
+        $sql = 'SELECT * FROM items WHERE p_gender="'.$gender.'";';
+        $result = mysqli_query($conn, $sql);
+
+
+        while($row = mysqli_fetch_array($result)){
+            array_push($products , $row[0]);
+        }
+         
+        mysqli_close($conn);
+
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +27,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="login_style.css">
     <link rel="stylesheet" href="style_list.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <title>VELASCA</title>
 </head>
 
@@ -28,14 +45,21 @@
             include 'navbar.php'
         ?>
 
-        <div class="top-banner" style="margin-top:120px">
-                <img src="images/men_banner.jpg" style="width:100%" alt="">
+        <div class="top-banner" style="margin-top:120px;margin-bottom:50px;">
+                <?php 
+                    if($_GET['sex']=='M'){
+                        echo '<img src="images/men_banner.jpg" style="width:100%" alt="">';
+                    }
+                    else{
+                        echo '<img src="images/women_banner.png" style="width:100%" alt="">';
+                    }
+                ?>
         </div>
     </div>        
         <?php
+            foreach ($products as $p_id){
             include 'list.inc.php';
-            include 'list.inc.php';
-            include 'list.inc.php';
+            }
         ?>
    
         <?php 

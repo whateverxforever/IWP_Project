@@ -20,10 +20,14 @@
             if (password_verify($pass, $row['password'])) {
 
                 session_start();
+
                 $_SESSION['user'] = $row['username'];
                 $_SESSION['user_name'] = $row['name'];
                 $_SESSION['user_phone'] = $row['phone'];
                 $_SESSION['user_email'] = $row['email'];
+                $_SESSION['cart'] = [];
+                $_SESSION['cost'] = 0;
+                $_SESSION['final_cost'] = 0;
                 
                 header("Location: index.php");
             }else{

@@ -34,6 +34,5 @@ html {
 }
 
 input[type="radio"]:checked {
-
     background-color: pink;
 }

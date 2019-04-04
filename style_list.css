@@ -151,7 +151,28 @@ nav ul li a:focus {
 }
 
 
-.list-item :hover {
-    display: block;
-    background-color: rgb(255, 159, 212);
+
+.list-wrapper :hover {
+    border: 1px solid pink;
+}
+
+.list-desc span {
+    border: none !important;
+}
+
+.list-desc span b {
+    border: none !important;
+}
+
+.list-image img {
+    border: none !important;
+}
+
+button {
+    border: none;
+    background: #ff3399;
+    width: 20%;
+    font-size: 12px;
+    height: 30px;
+    color: white;
 }

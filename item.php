@@ -22,11 +22,15 @@
         $p_material = $row['p_material'];
         $p_specification = $row['p_specification'];        
         }
-        else{
-            header("Location: index.php");
-        }
+        // else{
+        //     header("Location: index.php");
+        // }
+    else{
+        header("Location: index.php");
+    }
 
 ?>    
+
 <html>
     <title><?php echo $p_product?></title>
     <head>
@@ -44,7 +48,9 @@
                 <div class="item-image">
                     <?php echo '<img src="images/Shoes/Men/'.$_GET['p_id'].'.jpg" style="margin-left:80px;width:500px;height:500px;align=center">'; ?>
                 </div>
-                <form class="item-description">
+                <form class="item-description" action="cart.php" method="GET">
+                    <input type="hidden" name="p_id" value=<?php echo $p_id ;?>>
+                    <input type="hidden" name="price" value=<?php echo $p_price ;?>>
                     <h2><?php echo $p_company; ?></h2>
                     <h3 style="line-height: 3px;"><?php echo $p_product; ?></h3>
                     <span style="border: 1px solid black; padding: 5px;"><?php echo $p_rating ."<i class='fas fa-star' style='color:darkorange'></i> Rating"; ?></span> <br> <hr>
@@ -59,7 +65,7 @@
                         ?>
                     </span>
                     <br> <br>
-                    <button type="submit">ADD TO CART <i class="fas fa-shopping-bag"></i></button>
+                    <button type="submit"> ADD TO CART <i class="fas fa-shopping-bag"></i></button>
                     <h5>This item cannot be returned</h5>
                     <hr>
                     <h3>PRODUCT DETAILS</h3>

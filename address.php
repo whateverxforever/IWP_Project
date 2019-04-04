@@ -1,32 +1,13 @@
 <?php
 
     session_start();
-
-    if(isset($_GET['p_id'])){
-        $x = $_GET['p_id'];
-        $y = $_GET['size'];
-        
-        $_SESSION['cost'] += $_GET['price'];
-
-
-        array_push($_SESSION['cart'], [$x, $y]);
-
-        header('Location: cart.php');
-    }
-
-    require 'db.inc.php';
-
-
+    
     if(!isset($_SESSION['user'])){
-        header('Location: index.php');
+        header("Location: index.php");
+        end();    
     }
-
-    $shipping = 0;
-    $_SESSION['final_cost'] = $_SESSION['cost']*1.07+$shipping;
+ 
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -62,36 +43,30 @@
     
         <!-- <div class="cart-items" style="margin-left:0;width:50%;" > -->
         <div style="display:block; float:left; width:60%">
-            <?php
-                foreach ($_SESSION['cart'] as $var){
-                $p_id = $var[0];       
-                include 'cart.inc.php';
-                }
-            ?>
+            <span style="margin-left:200px;">ENTER DELIVERY ADDRESS</span> <br> <br>
+            <textarea name="" id="" cols="60" rows="15" style="margin-left:200px;border:solid pink;"></textarea>
         </div>
         <!-- <div class="cart-sum" style="margin-right=0;width:50%;float:right;"> -->
         <div style="display:block;float:right;width:15%; margin-right:20%; margin-bottom:40px;line-height:40px;border-left:1px solid black;padding: 30px">
-                <span style="color: grey;">PRICE DETAILS</span>     <br>
-                Total MRP  <span style="float:right;">$<?php echo $_SESSION['cost']; ?></span> <br>
-                Estimated Tax <span style="float:right;">$<?php echo $_SESSION['cost']*0.07; ?></span> <br>
-                Delivery Charges <span style="float:right;">$
-                <?php 
-                    if($_SESSION['cost'] < 300){
-                        $shipping = 50;                        
-                    }
-                    echo $shipping;
-
-                ?></span> <br>
-
-                <hr>
-                <b>Total <span style="float:right;">$<?php echo $_SESSION['final_cost']; ?></span> </b><br>
-                <a href="address.php"><button style="width:100%;height:40px;" id="place_order"><b>PLACE ORDER</b></button></a> 
+                <span style="color:grey;">CHOOSE DELIVERY SPEED</span>
+                <div class="delivery" style="line-height:20px; background-color:rgba(255, 51, 153, 0.3);padding:10px">
+                    <input type="radio" name="delivery_type" id="standard" value=0 checked="checked"><b>Standard Delivery</b>  <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:14px">Get it in 7 Days</span>
+                </div>
+                <div class="delivery" style="line-height:20px; background-color:rgba(255, 51, 153, 0.3);padding:10px">
+                    <input type="radio" name="delivery_type" id="express" value=50><b>Express Delivery</b>  <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size:14px">Get it in 2 Days&nbsp;&nbsp;&nbsp;+$25</span>
+                </div>
+                <a href=""><button style="width:100%;height:40px;" id="place_order"><b>PLACE ORDER</b></button></a> 
         </div>    
 
         <style>
             #place_order:hover{
                 transition: .3s;
                 font-size: 14px;
+            }
+            .delivery:hover{
+                border: solid purple 1px;
             }
         </style>
   

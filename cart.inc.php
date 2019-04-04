@@ -28,7 +28,7 @@
             <?php echo '<img src="images/Shoes/Men/'.$p_id.'.jpg" style="width:100px;height:100px;">'; ?>
         </div>
         
-        <div class="list-desc" style="float:left;margin-right:0px;padding-left:80px;text-align:left;width:50%;height:100px;border: none !important;">
+        <div class="list-desc" style="float:left;margin-right:0px;padding-left:80px;text-align:left;width:60%;height:100px;border: none !important;">
             <span style="font-size: 22px"><b><?php echo $product;?></b></span>
             <span style="font-size: 18px"><?php echo $company;?></span>
             <a href="item.delete.php?pid=<?php echo $p_id;?>&size=<?php echo $var[1];?>&price=<?php echo $price; ?>" style="float:right;"><i class="fas fa-trash" style="background-color:white;color:#ff3399;border:none !important;"></i></a>

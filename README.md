@@ -9,10 +9,10 @@ Title: Velasca – eCommerce Website
 
 
 
-SUBMITTED BY
+BY
 
 GAURAV ACHARYA    	17BCE1120
-
+MOHIKA THAMPI           17BCE1079
 
 ### Abstract
 

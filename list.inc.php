@@ -25,7 +25,7 @@
 <div class="list-wrapper">
     <div class = "list-item" style="padding-left:5%;padding-right:5%;margin-left:18%;width:50%;height:200px;margin-bottom:40px;padding-top: 20px;padding-bottom: 20px;">
         <div class="list-image" style="width:200px;height:200px;float:left;border: none !important;">
-            <?php echo '<img src="images/Shoes/Men/'.$p_id.'.jpg" style="width:200px;height:200px;">'; ?>
+            <?php echo '<img src="images/Shoes/'.$gender.'/'.$p_id.'.jpg" style="width:200px;height:200px;">'; ?>
         </div>
         
         <div class="list-desc" style="float:left;padding-left:80px;text-align:left;width:400px;height:200px;border: none !important;">

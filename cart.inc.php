@@ -16,6 +16,7 @@
             $price = $row[4];
             $rating = $row[3];
             $discount = $row[5];
+            $gender = $row[10];
         }
 
         mysqli_close($conn);
@@ -25,7 +26,7 @@
 <div class="list-wrapper">
     <div class = "list-item" style="padding-left:5%;margin-left:18%;margin-right:0;width:50%;height:100px;margin-bottom:40px;padding-top:20px;padding-bottom: 20px;">
         <div class="list-image" style="width:100px;height:100px;float:left;border: none !important;">
-            <?php echo '<img src="images/Shoes/Men/'.$p_id.'.jpg" style="width:100px;height:100px;">'; ?>
+            <?php echo '<img src="images/Shoes/'.$gender.'/'.$p_id.'.jpg" style="width:100px;height:100px;">'; ?>
         </div>
         
         <div class="list-desc" style="float:left;margin-right:0px;padding-left:80px;text-align:left;width:60%;height:100px;border: none !important;">

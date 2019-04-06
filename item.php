@@ -20,7 +20,8 @@
         $p_size = explode(",",$row['p_size']);
         $p_details = $row['p_details'];
         $p_material = $row['p_material'];
-        $p_specification = $row['p_specification'];        
+        $p_specification = $row['p_specification'];
+        $p_gender = $row['p_gender'];        
         }
         // else{
         //     header("Location: index.php");
@@ -46,7 +47,7 @@
         <div class="wrap" style="padding:20px">
             <div class="wrap-inner">
                 <div class="item-image">
-                    <?php echo '<img src="images/Shoes/Men/'.$_GET['p_id'].'.jpg" style="margin-left:80px;width:500px;height:500px;align=center">'; ?>
+                    <?php echo '<img src="images/Shoes/'.$p_gender.'/'.$_GET['p_id'].'.jpg" style="margin-left:80px;width:500px;height:500px;align=center">'; ?>
                 </div>
                 <form class="item-description" action="cart.php" method="GET">
                     <input type="hidden" name="p_id" value=<?php echo $p_id ;?>>

@@ -1,13 +1,15 @@
 <?php
 
     session_start();
-    
     if(!isset($_SESSION['user'])){
-        header("Location: index.php");
-        end();    
+        header("Location: login.php");
     }
- 
+    else{
+        $_SESSION['address'] = $_POST['address'];
+    }
+    
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">

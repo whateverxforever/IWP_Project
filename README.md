@@ -1,5 +1,5 @@
 # IWP_Project
-E-Commerce website
+E-Commerce website (Pure CSS no Boootstrap)
 CSE3002 – INTERNET AND WEB PROGRAMMING
 
 

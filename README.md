@@ -138,7 +138,7 @@ $(window).on('scroll', function () {
 
 Back end: 
 ▪	PHP
-Stands for “Hypertext Preprocessor”. PHP is an HTML-embedded web scripting language. This means PHP code can be inserted into the HTML of a Web page. When a PHP page is accessed, the PHP code is read or "parsed" by the server the page resides on. The output from the PHP functions on the page are typically returned as HTML code, which can be read by the browser. Because the PHP code is transformed into HTML before the page is loaded, users cannot view the PHP code on a page. This make PHP pages secure enough to access databases and other secure information.
+Stands for “Hypertext Preprocessor”(idk why 😂🤣🤷‍♂️). PHP is an HTML-embedded web scripting language. This means PHP code can be inserted into the HTML of a Web page. When a PHP page is accessed, the PHP code is read or "parsed" by the server the page resides on. The output from the PHP functions on the page are typically returned as HTML code, which can be read by the browser. Because the PHP code is transformed into HTML before the page is loaded, users cannot view the PHP code on a page. This make PHP pages secure enough to access databases and other secure information.
 
 	Sample Code:
  	<div style="display:block; float:left; width:60%">
